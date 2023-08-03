@@ -143,7 +143,8 @@ public class DatePick extends menuActivity {
             String parseUrl = baseUrl + apiKey + "&date=" + ymd;
             Log.d("onDateSet()", parseUrl);
             NASA nasa = new NASA();
-            AsyncTask<String, Integer, String> response = nasa.execute(parseUrl);
+            String responseStr = nasa.execute(parseUrl);
+            JSONObject response = new JSONObject(responseStr);
         };
 
         Calendar cal = Calendar.getInstance();

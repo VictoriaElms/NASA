@@ -34,7 +34,7 @@
     <string name="fragmentUrl">URL:</string>
     <string name="fragmentTitle">Title:</string>
     <string name="goBack">Go Back</string>
-    <string name="Hello">"Check out these cool pictures! /n Select a date!"</string>
+    <string name="Hello">"Check out these cool pictures! Select a date!"</string>
     <string name="Space">Space Pictures!</string>
     <string name="clear_list">Clear All</string>
     <string name="textDateMessage">Pick a date</string>

@@ -2,17 +2,24 @@ package com.example.myapplication;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.AsyncQueryHandler;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.media.Image;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.renderscript.ScriptGroup;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -21,17 +28,19 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class DatePick extends menuActivity {
+public class DatePick extends menuActivity implements View.OnClickListener {
 
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
@@ -43,13 +52,14 @@ public class DatePick extends menuActivity {
     private SQLiteDatabase db;
     private final ContentValues cValues = new ContentValues();
 
-
     Button clear;
+    ImageView nasa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dateselector);
+
 
         setTitle(R.string.DatePickerPage);
         Load();
@@ -63,7 +73,7 @@ public class DatePick extends menuActivity {
         listView.setAdapter(adapter);
 
         progressBar = findViewById(R.id.progressBar);
-        progressBar.setVisibility(View.INVISIBLE);
+        progressBar.setVisibility(View.VISIBLE);
 
         yes = getString(R.string.yes);
         no = getString(R.string.no);
@@ -143,8 +153,7 @@ public class DatePick extends menuActivity {
             String parseUrl = baseUrl + apiKey + "&date=" + ymd;
             Log.d("onDateSet()", parseUrl);
             NASA nasa = new NASA();
-            String responseStr = nasa.execute(parseUrl);
-            JSONObject response = new JSONObject(responseStr);
+            nasa.execute(parseUrl);
         };
 
         Calendar cal = Calendar.getInstance();
@@ -210,7 +219,12 @@ public class DatePick extends menuActivity {
         datePickerDialog.show();
     }
 
-    private class NASA extends AsyncTask<String, Integer, String> {
+    @Override
+    public void onClick(View view) {
+
+    }
+
+    class NASA extends AsyncTask<String, Integer, String> {
 
         @Override
         protected void onPreExecute() {
@@ -266,6 +280,7 @@ public class DatePick extends menuActivity {
 
         @Override
         protected void onProgressUpdate(Integer... values) {
+
             progressBar.setProgress(values[0]);
         }
 
@@ -319,9 +334,11 @@ public class DatePick extends menuActivity {
             View v = getLayoutInflater().inflate(R.layout.display_image, viewGroup, false);
             TextView title = v.findViewById(R.id.imageTitle);
             TextView date = v.findViewById(R.id.imageDate);
+            ImageView image = v.findViewById(R.id.image);
             getImage nasaImage = getItem(position);
             title.setText(nasaImage.getTitle());
             date.setText(nasaImage.getDate());
+            image.setImageURI(Uri.parse(nasaImage.getUrl()));
             return v;
         }
     }

@@ -90,12 +90,19 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"/>
 
+
                 <Button
                     android:id="@+id/clear_list"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/clear_list"
                     android:gravity="right"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:id="@+id/nasa"/>
 
             </LinearLayout>
 

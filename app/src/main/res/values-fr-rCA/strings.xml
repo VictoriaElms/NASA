@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Ma demande version 1.0</string>
+<string name="nasa_image_of_the_day">Image de la NASA du jour</string>
+<string name="enter">Entrer</string>
+<string name="search">Recherche</string>
+<string name="go_back">Retourner</string>
+<string name="explanation">Explication</string>
+<string name="date_picker">Sélecteur de date</string>
+<string name="date_display">Affichage de la date</string>
+<string name="welcome_to_nasa_image_of_the_day">Bienvenue sur le image du jour de la NASA</string>
+<string name="each_day">Chaque jour, une image ou une photographie différente de notre univers fascinant est présentée, accompagnée de une brève explication rédigée par un astronome professionnel.</string>
+<string name="open">Ouvrir</string>
+<string name="close">Fermer</string>
+<string name="yes">Oui</string>
+<string name="no">Non</string>
+<string name="alertTitle">Supprimer cette image ?</string>
+<string name="JAN">JAN</string>
+<string name="FEB">FEV</string>
+<string name="MAR">MAR</string>
+<string name="APR">APV</string>
+<string name="MAY">MAI</string>
+<string name="JUN">JUIN</string>
+<string name="JUL">JUI</string>
+<string name="AUG">Août</string>
+<string name="SEP">SEP</string>
+<string name="OCT">OCT</string>
+<string name="NOV">NOV</string>
+<string name="DEC">DEC</string>
+<string name="item1">Préparez-vous pour de superbes images spatiales de la NASA !!</string>
+<string name="navTitle">NASA Space Pics Version 1.0</string>
+<string name="actionHome">Maison</string>
+<string name="actionDatePicker">Choisis une date</string>
+<string name="fragmentDate">Date:</string>
+<string name="fragmentUrl">URL:</string>
+<string name="fragmentTitle">Title:</string>
+<string name="goBack">Retourner</string>
+<string name="Hello">Découvrez ces photos sympas ! /n Sélectionnez une date !</string>
+<string name="Space">Photos de le espace !</string>
+<string name="clear_list">Tout effacer</string>
+<string name="textDateMessage">Sélecteur de date</string>
+<string name="help">Aider</string>
+<string name="helpTitle">Comment utiliser le application :</string>
+<string name="helpText">Entrez combien vous aimez le espace et cliquez sur "Entrer!" bouton. \n
+    Sélectionnez une date à le aide du sélecteur de date, puis cliquez sur OK. \n
+    Cliquez sur le élément de la liste pour voir le titre, la date et le URL de le élément sélectionné. \n
+    Appuyez longuement sur le élément de la liste à supprimer de la liste. </string>
+<string name="doneHelp">Fini</string>
+<string name="DatePickerPage">Sélecteur de date</string>
+<string name="nasa_pictures">Photos de la NASA</string>
+<string name="nasa_home_page">Page de accueil de la NASA</string>
+<string name="clear" />
+<string name="noElements" />
+<string name="enter_how_much_you_love_space">Entrez combien vous aimez le espace !</string>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">My Application version 1.0</string>
+    <string name="nasa_image_of_the_day">NASA Image of the Day</string>
+    <string name="enter">Enter</string>
+    <string name="search">Search</string>
+    <string name="go_back">Go back</string>
+    <string name="explanation">Explanation</string>
+    <string name="date_picker">Date Picker</string>
+    <string name="date_display">Date Display</string>
+    <string name="welcome_to_nasa_image_of_the_day">Welcome to NASA image of the day</string>
+    <string name="each_day">Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alertTitle">Remove this image?</string>
+    <string name="JAN">JAN</string>
+    <string name="FEB">FEB</string>
+    <string name="MAR">MAR</string>
+    <string name="APR">APR</string>
+    <string name="MAY">MAY</string>
+    <string name="JUN">JUN</string>
+    <string name="JUL">JUL</string>
+    <string name="AUG">AUG</string>
+    <string name="SEP">SEP</string>
+    <string name="OCT">OCT</string>
+    <string name="NOV">NOV</string>
+    <string name="DEC">DEC</string>
+    <string name="item1">Get ready for cool NASA space pictures!!</string>
+    <string name="navTitle">NASA Space Pics Version 1.0</string>
+    <string name="actionHome">Home</string>
+    <string name="actionDatePicker">Pick a date</string>
+    <string name="fragmentDate">Date:</string>
+    <string name="fragmentUrl">URL:</string>
+    <string name="fragmentTitle">Title:</string>
+    <string name="goBack">Go Back</string>
+    <string name="Hello">"Check out these cool pictures! /n Select a date!"</string>
+    <string name="Space">Space Pictures!</string>
+    <string name="clear_list">Clear All</string>
+    <string name="textDateMessage">Pick a date</string>
+    <string name="help">Help</string>
+    <string name="helpTitle">How to use the app:</string>
+    <string name="helpText">Enter how much you love space and click the "Enter!" button. \n
+    Select a date using the date picker, and click OK. \n
+    Click on the list item to see the Title, Date, and URL of the item selected. \n
+    Long press the list item to remove from the list. </string>
+    <string name="doneHelp">Done</string>
+    <string name="DatePickerPage">Date Picker</string>
+    <string name="nasa_pictures">NASA Pictures</string>
+    <string name="nasa_home_page">NASA Home Page</string>
+    <string name="clear" />
+    <string name="noElements" />
+    <string name="enter_how_much_you_love_space">Enter how much you love space!</string>
+
+
+</resources>
